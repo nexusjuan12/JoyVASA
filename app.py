@@ -184,7 +184,7 @@ with gr.Blocks(theme=gr.themes.Soft(font=[gr.themes.GoogleFont("Plus Jakarta San
     )
 
 demo.launch(
-    server_port=args.server_port,
-    share=args.share,
+    server_port=7860,
+    share=True,
     server_name=args.server_name
 )
