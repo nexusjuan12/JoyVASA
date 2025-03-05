@@ -205,16 +205,18 @@ def add_audio_to_video(silent_video_path: str, audio_video_path: str, output_vid
         cmd = [
             'ffmpeg',
             '-y',
-            '-i', f'"{silent_video_path}"',
-            '-i', f'"{audio_video_path}"',
+            '-i', silent_video_path,
+            '-i', audio_video_path,
             '-map', '0:v',
             '-map', '1:a',
             '-c:v', 'copy',
             '-shortest',
-            f'"{output_video_path}"'
+            output_video_path
         ]
+    print("Executing command:", " ".join(cmd))  # Print FFmpeg command
+
     try:
-        subprocess.run(cmd)
+        subprocess.run(cmd, check=True)  # `check=True` will show errors
         log(f"Video with audio generated successfully: {output_video_path}")
         if remove_temp:
             os.remove(silent_video_path)
