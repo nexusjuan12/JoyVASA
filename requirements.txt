@@ -41,7 +41,7 @@ albumentations==1.4.10
 matplotlib==3.9.0
 imageio-ffmpeg==0.5.1
 tyro==0.8.5
-gradio==3.50.2
-gradio-client==0.6.1
+gradio==4.12.0
+gradio-client==0.8.0
 pykalman==0.9.7
 tensorboardX==2.6.2.2
