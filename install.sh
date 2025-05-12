@@ -18,6 +18,8 @@ conda activate joyvasa
 # Clone repository and install dependencies
 git clone https://github.com/nexusjuan12/JoyVASA.git
 cd JoyVASA
+mkdir -p assets/examples/imgs
+touch assets/examples/imgs/joyvasa_006.png
 pip install -r requirements.txt
 
 # Build XPose dependencies
