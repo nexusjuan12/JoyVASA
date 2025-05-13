@@ -1,5 +1,3 @@
-
-
 accelerate==0.28.0
 audio-separator==0.17.2
 av==12.1.0
@@ -33,7 +31,6 @@ pre-commit==3.7.1
 scipy==1.13.1
 imageio==2.34.2
 lmdb==1.4.1
-tqdm==4.66.4
 rich==13.7.1
 ffmpeg-python==0.2.0
 scikit-image==0.24.0
@@ -41,8 +38,10 @@ albumentations==1.3.1
 matplotlib==3.9.0
 imageio-ffmpeg==0.5.1
 tyro==0.8.5
-gradio==3.50.2
-gradio-client==0.6.1
-pydantic==1.10.22
-pykalman==0.9.7
+gradio==4.44.1
+gradio-client==1.3.0
+pydantic==2.7.1
+fastapi==0.109.2
+starlette==0.36.3
 tensorboardX==2.6.2.2
+pykalman==0.9.7
