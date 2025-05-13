@@ -28,6 +28,7 @@ pip install torch torchvision torchaudio  # Ensure torch dependencies are instal
 python setup.py build install
 cd -  # Return to JoyVASA root
 
+apt update && apt install -y imagemagick
 mkdir -p assets/examples/imgs
 convert -size 512x512 xc:transparent assets/examples/imgs/joyvasa_006.png
 
