@@ -28,17 +28,11 @@ pip install torch torchvision torchaudio  # Ensure torch dependencies are instal
 python setup.py build install
 cd -  # Return to JoyVASA root
 
-# Install Hugging Face CLI
-pip install -U "huggingface_hub[cli]"
+mkdir -p assets/examples/imgs
+convert -size 512x512 xc:transparent assets/examples/imgs/joyvasa_006.png
 
-# Prepare pretrained_weights directory
-mkdir -p pretrained_weights
-huggingface-cli download KwaiVGI/LivePortrait --local-dir pretrained_weights --exclude "*.git*" "README.md" "docs"
 
-# Move into pretrained_weights
-cd pretrained_weights
 
-# Install Git LFS once and clone models
 git lfs install
 git clone https://huggingface.co/jdh-algo/JoyVASA
 git clone https://huggingface.co/TencentGameMate/chinese-hubert-base
