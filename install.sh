@@ -31,8 +31,3 @@ cd -  # Return to JoyVASA root
 mkdir -p assets/examples/imgs
 convert -size 512x512 xc:transparent assets/examples/imgs/joyvasa_006.png
 
-
-
-git lfs install
-git clone https://huggingface.co/jdh-algo/JoyVASA
-git clone https://huggingface.co/TencentGameMate/chinese-hubert-base
