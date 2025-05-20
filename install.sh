@@ -16,6 +16,9 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate joyvasa
 
 # Clone repository and install dependencies
+sudo apt update
+sudo apt install -y nvidia-cuda-toolkit
+
 git clone https://github.com/nexusjuan12/JoyVASA.git
 cd JoyVASA
 mkdir -p assets/examples/imgs
