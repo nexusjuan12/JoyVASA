@@ -18,6 +18,7 @@ conda activate joyvasa
 # Clone repository and install dependencies
 sudo apt update
 sudo apt install -y nvidia-cuda-toolkit
+pip install torch==1.12.1+cu116 torchvision==0.13.1+cu116 torchaudio==0.12.1 -f https://download.pytorch.org/whl/torch_stable.html
 pip install ninja
 
 git clone https://github.com/nexusjuan12/JoyVASA.git
