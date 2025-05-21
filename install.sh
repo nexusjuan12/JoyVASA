@@ -21,6 +21,7 @@ sudo apt update
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
 sudo apt install -y nvidia-cuda-toolkit
 pip install ninja
+apt install g++
 
 git clone https://github.com/nexusjuan12/JoyVASA.git
 cd JoyVASA
